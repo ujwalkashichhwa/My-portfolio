@@ -1,0 +1,16 @@
+.container{
+    max-width: 100%;
+    min-height: 40.6rem;
+    background-color: $black-color1;
+    padding-left: 1.5rem;
+    padding-top: 4rem;
+    
+    .htmlTags{
+        color: $text-black1;
+        font-family: $curly-font;
+    }
+
+    .container-body{
+        padding-left: 3rem;
+    }
+}   

@@ -1,0 +1,67 @@
+.about-container{
+    width: 100%;
+    font-family: $h1-font;
+    
+}
+
+.about-title,
+.about-me-paragraph{
+    padding: 2rem;
+    color: $text-white;
+}
+
+.about-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about-title:hover{
+    @include textHoverEffect();
+}
+
+.about-me-paragraph{
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 50%;
+
+    p{
+        padding: 0.7rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .about-title{
+        font-size: 1.3rem;
+    }
+
+    .about-me-paragraph{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 998px) {
+    .about-title{
+        font-size: 1.3rem;
+    }
+
+    .about-me-paragraph{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-title,
+    .about-me-paragraph{
+    padding: 2rem;
+    padding-left: 0rem;
+    }
+    .about-title{
+        font-size: 0.9rem;
+    }
+
+    .about-me-paragraph{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+}

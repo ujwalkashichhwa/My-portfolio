@@ -1,0 +1,88 @@
+
+.home-container{
+    width: 100%;
+}
+
+.home-body{
+    padding: 2rem;
+    color: $text-white;
+    font-family: $h1-font;
+    text-transform: uppercase;
+    
+    h1, h2{ 
+        padding: 0.5rem;
+        font-size: 4.5rem;
+    }
+
+    h1:hover, h2:hover{
+        @include textHoverEffect();
+    }
+
+
+}
+
+.home-contact-button{
+    padding: 2rem;
+    button{
+        background-color: $black-color1;
+        color: $text-white;
+        height: 2.6rem;
+        width: 15rem;
+        font-size: 1.4rem;
+        border-radius: 0.5rem;
+        border: 0.1rem solid $white-color;
+    }
+
+    button:hover{
+        cursor: pointer;
+        @include textHoverEffect();
+        color: $text-black1;
+        border: 0.1rem solid $text-black1;
+    }
+}
+
+@media (max-width: 1080px) {
+    .home-body{
+        h1, h2{
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (max-width: 998px) {
+    .home-body{
+        h1{
+            font-size: 2.5rem;
+        }
+
+        h2{
+            font-size: 2.3rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .home-body,
+    .home-contact-button{
+        padding-left    : 0rem;
+    }
+
+
+    .home-body{
+        h1{
+            font-size: 1.5rem;
+        }
+
+        h2{
+            font-size: 0.8rem;
+        }
+    }
+
+    .home-contact-button{
+        button{
+            width: 8rem;
+            height: 2.4rem;
+            font-size: 0.7rem;
+        }
+    }
+}

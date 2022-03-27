@@ -1,0 +1,28 @@
+    .myskill-container, .cards-container{
+        width: 100%;
+    }
+
+    .cards-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        color:#fff;
+
+        .cards{
+            position: relative;
+            margin: 2rem;
+            width: 15rem;
+            height: 6rem;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.1rem solid transparent;
+            border-image: linear-gradient(45deg, red, blue);
+            border-image-slice: 1;
+            box-shadow: rgba($color: #000000, $alpha: 1.0);
+        }
+    }
+

@@ -1,0 +1,34 @@
+@mixin textHoverEffect {
+    background: -webkit-linear-gradient(#eee, rgb(69,57, 248));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@import 'styles/variables.scss';
+@import 'styles/navBar.scss';
+@import 'styles/layout.scss';
+@import 'styles/home.scss';
+@import 'styles/about.scss';
+@import 'styles/skills.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.htmlTags{
+    padding-top: 1rem;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
